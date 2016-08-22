@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:text="Contact us"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="70px"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/subject_label"
+        android:layout_width="wrap_content"
+        android:text="Subject"
+        android:textColor="@color/TextColorWhite"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Textbox"
+        android:layout_alignStart="@+id/Textbox" />
+    <EditText
+        android:id="@+id/subject"
+        android:maxLines="1" android:singleLine="true"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/email_label"/>
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:text="Text"
+        android:textColor="@color/TextColorWhite"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/subject"
+        android:layout_alignStart="@+id/subject" />
+    <EditText
+        android:id="@+id/Textbox"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password_label"
+        android:layout_alignLeft="@+id/subject" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:backgroundTint="@color/materialGrey3"
+        android:layout_below="@+id/subject"
+        android:layout_alignStart="@+id/subject"
+        android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:text="We will try to answer your question as fast as possible."
+            android:textColor="@color/TextColorWhite"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+

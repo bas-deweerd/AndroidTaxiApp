@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="20dp">
+
+
+
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/materialGrey2_Trans"
+        android:backgroundTintMode="src_atop"
+        android:baselineAligned="false"
+        />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/Welcome_home"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="70px"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottomBar">
+
+        <!-- some scrolling content -->
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/materialGrey3"
+        android:layout_alignParentBottom="true">
+
+        <Button android:id="@+id/BottomBarButton1"
+                android:layout_width="wrap_content"
+                android:background="@drawable/common_full_open_on_phone"
+                android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+
+
+                android:layout_weight="1" />
+
+        <Button android:id="@+id/BottomBarButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/ic_delete_white_24dp"
+                android:layout_weight="1" />
+
+        <Button android:id="@+id/BottomBarButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:background="@color/materialGrey3"
+            style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1" />
+
+        <Button android:id="@+id/BottomBarButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/materialGrey3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1" />
+
+        <!-- Some Buttons -->
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

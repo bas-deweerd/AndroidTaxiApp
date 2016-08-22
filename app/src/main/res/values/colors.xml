@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    --Hauptfarben:
+    <color name="colorPrimary">#FFB300</color>
+    <color name="materialGrey3">#FFB300</color>
+    <color name="colorAccent">#FFB300</color>
+
+    <color name="red">#B71C1C</color>
+
+
+    <color name="colorPrimaryDark">#FFB300</color>
+    <color name="transparant50">#f6a59e9e</color>
+    <color name="transparant">#E9990000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="materialBlack">#000000</color>
+    <color name="materialGrey1">#212121</color>
+    <color name="materialGrey2">#303030</color>
+
+    <color name="materialGrey2_Trans">#a130353b</color>
+    <color name="TextColorWhite">#ffffffff</color>
+
+</resources>

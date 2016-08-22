@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="com.taxiapp.thetaxicompany.models.myAccount">
+
+
+<ImageView
+    android:id="@+id/background_image"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"
+    android:scaleType="centerCrop"
+    android:backgroundTint="@color/materialGrey2_Trans"
+    android:backgroundTintMode="src_atop"
+    android:baselineAligned="false"
+    />
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+
+
+    <TableRow>
+        <TextView
+            android:text="Email:"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhite"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:padding="20dip" />
+        <TextView
+            android:text=""
+            android:id="@+id/EmailInput"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:padding="20dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Firstname:"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="20dp"
+            android:padding="20dip" />
+        <TextView
+            android:text=""
+            android:id="@+id/FirstnameInput"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:padding="20dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Lastname:"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="20dp"
+            android:padding="20dip" />
+        <TextView
+            android:text=""
+            android:id="@+id/LastnameInput"
+            android:textStyle="bold"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:padding="20dip" />
+    </TableRow>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_changePasword"
+        android:layout_width="350dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="Change your Password"
+        android:backgroundTint="@color/materialGrey3"
+        android:layout_below="@id/password"
+        android:layout_centerInParent="true"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_changeEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Change your Email"
+        android:backgroundTint="@color/materialGrey3"
+        android:layout_below="@id/password"
+        android:layout_centerInParent="true"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_deleteAccount"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Delete your Account"
+        android:backgroundTint="@color/red"
+        android:layout_below="@id/password"
+        android:layout_centerInParent="true"
+        />
+
+</TableLayout>
+
+
+
+
+
+<include layout="@layout/content_nvigation" />
+
+
+
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    android:src="@android:drawable/ic_dialog_email" />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
